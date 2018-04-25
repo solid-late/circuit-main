@@ -369,8 +369,8 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <package name="4_CON_SMD_254">
 <smd name="1" x="0.38" y="2.54" dx="2.54" dy="1.27" layer="1"/>
 <smd name="2" x="0.38" y="0" dx="2.54" dy="1.27" layer="1"/>
-<text x="-5.08" y="1.27" size="1.27" layer="27">1</text>
-<text x="-3.81" y="2.54" size="1.27" layer="21">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="1.27" layer="27">1</text>
+<text x="-1.27" y="3.81" size="1.27" layer="21">&gt;NAME</text>
 <smd name="3" x="0.38" y="-2.54" dx="2.54" dy="1.27" layer="1"/>
 <smd name="4" x="0.38" y="-5.08" dx="2.54" dy="1.27" layer="1"/>
 </package>
