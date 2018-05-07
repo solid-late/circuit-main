@@ -469,11 +469,11 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <description>Footprint for representing an Arduino Uno board in an EAGLE schematic. Created by Dave Young for Element14. More EAGLE documentation at: http://www.element14.com/community/community/knode/cadsoft_eagle</description>
 <wire x1="66.04" y1="2.54" x2="66.04" y2="1.016" width="0.127" layer="51"/>
 <wire x1="66.04" y1="1.016" x2="65.024" y2="0" width="0.127" layer="51" curve="-90"/>
-<wire x1="65.024" y1="0" x2="1.016" y2="0" width="0.127" layer="51"/>
-<wire x1="1.016" y1="0" x2="0" y2="1.016" width="0.127" layer="51" curve="-90"/>
-<wire x1="0" y1="1.016" x2="0" y2="52.2986" width="0.127" layer="51"/>
-<wire x1="0" y1="52.2986" x2="1.016" y2="53.3146" width="0.127" layer="51" curve="-90"/>
-<wire x1="1.016" y1="53.3146" x2="64.77" y2="53.3146" width="0.127" layer="51"/>
+<wire x1="65.024" y1="0" x2="17.526" y2="0" width="0.127" layer="51"/>
+<wire x1="17.526" y1="0" x2="16.51" y2="1.016" width="0.127" layer="51" curve="-90"/>
+<wire x1="16.51" y1="1.016" x2="16.51" y2="52.2986" width="0.127" layer="51"/>
+<wire x1="16.51" y1="52.2986" x2="17.526" y2="53.3146" width="0.127" layer="51" curve="-90"/>
+<wire x1="17.526" y1="53.3146" x2="64.77" y2="53.3146" width="0.127" layer="51"/>
 <wire x1="64.77" y1="53.3146" x2="66.04" y2="52.0446" width="0.127" layer="51"/>
 <wire x1="66.04" y1="52.0446" x2="66.04" y2="40.6146" width="0.127" layer="51"/>
 <wire x1="66.04" y1="40.6146" x2="68.58" y2="38.0746" width="0.127" layer="51"/>
@@ -733,14 +733,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <wire x1="26.67" y1="1.905" x2="27.305" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="28.575" y1="1.27" x2="27.305" y2="1.27" width="0.2032" layer="21"/>
 <rectangle x1="27.686" y1="2.286" x2="28.194" y2="2.794" layer="51"/>
-<wire x1="-6.35" y1="32.385" x2="9.525" y2="32.385" width="0.127" layer="21"/>
-<wire x1="9.525" y1="32.385" x2="9.525" y2="43.815" width="0.127" layer="21"/>
-<wire x1="9.525" y1="43.815" x2="-6.35" y2="43.815" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="43.815" x2="-6.35" y2="32.385" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="3.2766" x2="11.7348" y2="3.2766" width="0.127" layer="21"/>
-<wire x1="11.7348" y1="3.2766" x2="11.7348" y2="12.2174" width="0.127" layer="21"/>
-<wire x1="11.7348" y1="12.2174" x2="-1.778" y2="12.2174" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="12.2174" x2="-1.778" y2="3.2766" width="0.127" layer="21"/>
 <text x="60.6806" y="30.4292" size="1.27" layer="21" rot="R270">ICSP</text>
 <circle x="62.23" y="32.004" radius="0.127" width="0.127" layer="21"/>
 <wire x1="66.802" y1="24.13" x2="67.437" y2="24.765" width="0.1524" layer="21"/>
@@ -786,9 +778,11 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <text x="33.274" y="49.022" size="1.4224" layer="21" font="vector" ratio="15" rot="R270">11</text>
 <text x="30.734" y="49.022" size="1.4224" layer="21" font="vector" ratio="15" rot="R270">12</text>
 <text x="28.194" y="49.022" size="1.4224" layer="21" font="vector" ratio="15" rot="R270">13</text>
-<pad name="GND..1" x="43.18" y="2.54" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND.1" x="43.18" y="2.54" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="GND..2" x="45.72" y="2.54" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="GND..3" x="48.26" y="2.54" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="." x="48.26" y="2.54" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A1" x="53.34" y="2.54" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A2" x="55.88" y="2.54" drill="1.016" diameter="1.8796" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -819,9 +813,9 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <connect gate="G$1" pin="D2" pad="2"/>
 <connect gate="G$1" pin="D3" pad="3"/>
 <connect gate="G$1" pin="D4" pad="4"/>
-<connect gate="G$1" pin="D5" pad="5"/>
+<connect gate="G$1" pin="D5" pad="A1"/>
 <connect gate="G$1" pin="D6" pad="6"/>
-<connect gate="G$1" pin="D7" pad="7"/>
+<connect gate="G$1" pin="D7" pad="A2"/>
 <connect gate="G$1" pin="GND" pad="GND.."/>
 </connects>
 <technologies>
@@ -998,10 +992,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <part name="U$15" library="fab" deviceset="LED" device="FAB1206"/>
 <part name="U$16" library="fab" deviceset="LED" device="FAB1206"/>
 <part name="U$17" library="fab" deviceset="LED" device="FAB1206"/>
-<part name="U$18" library="fab" deviceset="LED" device="FAB1206"/>
-<part name="U$19" library="fab" deviceset="LED" device="FAB1206"/>
-<part name="U$20" library="fab" deviceset="LED" device="FAB1206"/>
-<part name="U$21" library="fab" deviceset="LED" device="FAB1206"/>
 <part name="U$22" library="solidlib" deviceset="ARDUINO_CONN" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -1043,10 +1033,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <instance part="U$15" gate="G$1" x="198.12" y="27.94" rot="R180"/>
 <instance part="U$16" gate="G$1" x="228.6" y="38.1"/>
 <instance part="U$17" gate="G$1" x="233.68" y="40.64" rot="R180"/>
-<instance part="U$18" gate="G$1" x="241.3" y="50.8"/>
-<instance part="U$19" gate="G$1" x="246.38" y="53.34" rot="R180"/>
-<instance part="U$20" gate="G$1" x="254" y="63.5"/>
-<instance part="U$21" gate="G$1" x="259.08" y="66.04" rot="R180"/>
 <instance part="U$22" gate="G$1" x="124.46" y="60.96"/>
 <instance part="GND4" gate="1" x="104.14" y="68.58" rot="R270"/>
 <instance part="P+3" gate="1" x="101.6" y="63.5" rot="R90"/>
@@ -1139,12 +1125,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <wire x1="162.56" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
 <junction x="162.56" y="68.58"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="U$20" gate="G$1" pin="A"/>
-<wire x1="220.98" y1="68.58" x2="254" y2="68.58" width="0.1524" layer="91"/>
-<junction x="220.98" y="68.58"/>
-<pinref part="U$21" gate="G$1" pin="C"/>
-<wire x1="254" y1="68.58" x2="259.08" y2="68.58" width="0.1524" layer="91"/>
-<junction x="254" y="68.58"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1169,12 +1149,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <wire x1="167.64" y1="60.96" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
 <junction x="167.64" y="55.88"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="U$18" gate="G$1" pin="A"/>
-<wire x1="208.28" y1="55.88" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
-<junction x="208.28" y="55.88"/>
-<pinref part="U$19" gate="G$1" pin="C"/>
-<wire x1="241.3" y1="55.88" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
-<junction x="241.3" y="55.88"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -1243,42 +1217,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <junction x="198.12" y="30.48"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="17.78" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="C"/>
-<wire x1="193.04" y1="17.78" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="17.78" x2="228.6" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="17.78" x2="233.68" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="17.78" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="17.78" x2="246.38" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="17.78" x2="254" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="254" y1="17.78" x2="259.08" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="22.86" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
-<junction x="193.04" y="17.78"/>
-<pinref part="U$15" gate="G$1" pin="A"/>
-<wire x1="198.12" y1="22.86" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
-<junction x="198.12" y="17.78"/>
-<pinref part="U$21" gate="G$1" pin="A"/>
-<wire x1="259.08" y1="17.78" x2="259.08" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$20" gate="G$1" pin="C"/>
-<wire x1="254" y1="60.96" x2="254" y2="17.78" width="0.1524" layer="91"/>
-<junction x="254" y="17.78"/>
-<pinref part="U$17" gate="G$1" pin="A"/>
-<wire x1="233.68" y1="35.56" x2="233.68" y2="17.78" width="0.1524" layer="91"/>
-<junction x="233.68" y="17.78"/>
-<pinref part="U$16" gate="G$1" pin="C"/>
-<wire x1="228.6" y1="35.56" x2="228.6" y2="17.78" width="0.1524" layer="91"/>
-<junction x="228.6" y="17.78"/>
-<pinref part="U$18" gate="G$1" pin="C"/>
-<wire x1="241.3" y1="48.26" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
-<junction x="241.3" y="17.78"/>
-<pinref part="U$19" gate="G$1" pin="A"/>
-<wire x1="246.38" y1="48.26" x2="246.38" y2="17.78" width="0.1524" layer="91"/>
-<junction x="246.38" y="17.78"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$22" gate="G$1" pin="D2"/>
@@ -1331,6 +1269,26 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <wire x1="88.9" y1="22.86" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SERVO" gate="A" pin="3"/>
 <wire x1="88.9" y1="20.32" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$17" gate="G$1" pin="A"/>
+<wire x1="233.68" y1="35.56" x2="233.68" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="17.78" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="C"/>
+<wire x1="193.04" y1="22.86" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
+<junction x="193.04" y="17.78"/>
+<wire x1="193.04" y1="17.78" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$1" pin="A"/>
+<wire x1="198.12" y1="22.86" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
+<junction x="198.12" y="17.78"/>
+<wire x1="198.12" y1="17.78" x2="228.6" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="17.78" x2="233.68" y2="17.78" width="0.1524" layer="91"/>
+<junction x="228.6" y="17.78"/>
+<pinref part="U$16" gate="G$1" pin="C"/>
+<wire x1="228.6" y1="35.56" x2="228.6" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
